@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    .tech-icons {
+      display: flex;
+      gap: 10px;
+      margin-top: 15px;
+      font-size: 1.5rem;
+      color: #667eea;
+    }
+
+    .tech-icons i {
+      transition: transform 0.3s ease;
+    }
+
+    .tech-icons i:hover {
+      transform: scale(1.2);
+      color: #764ba2;
+    }
+
+    .project-category {
+      margin-bottom: 60px;
+    }
+
+    .project-category h3 {
+      color: #333;
+      font-weight: 600;
+      padding-bottom: 10px;
+      border-bottom: 3px solid #667eea;
+      display: inline-block;
+    }
+
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: none;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3) !important;
+    }
+
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-title {
+      color: #333;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .card-text {
+      color: #666;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    #projects h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 50px;
+    }
+  </style>
+</head>
+
+<body class="portfolio-page">
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename"></h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      
+      <div class="header-social-links">
+        <a href="https://www.facebook.com/PercevalGodonou" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/perceval_godonou" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- ===== PROJETS ===== -->
+    <section id="projects" class="container py-5">
+
+      <h2 class="text-center mb-5" data-aos="fade-up">Mes Projets</h2>
+
+      <!-- ================= PROJETS ACADÉMIQUES ================= -->
+      <div class="project-category mb-5">
+        <h3 class="mb-4" data-aos="fade-right">Projets Académiques</h3>
+
+        <div class="row g-4">
+          <!-- Projet 1 -->
+          <div class="col-md-4" data-aos="zoom-in">
+            <div class="card h-100 shadow-sm">
+              <img src="assets/img/academic1.jpg.png" class="card-img-top" alt="Site vitrine Oria">
+              <div class="card-body">
+                <h5 class="card-title">Site vitrine Oria</h5>
+                <p class="card-text">
+                  Conception d'un site web vitrine pour l'agence de communication Oria.
+                </p>
+                <div class="tech-icons">
+                  <i class="fab fa-html5" title="HTML5"></i>
+                  <i class="fab fa-css3-alt" title="CSS3"></i>
+                  <i class="fab fa-js" title="JavaScript"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 2 -->
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="card h-100 shadow-sm">
+              <img src="assets/img/academic2.jpg.jpg" class="card-img-top" alt="Site vitrine Fièrement Béninois">
+              <div class="card-body">
+                <h5 class="card-title">Fièrement Béninois</h5>
+                <p class="card-text">
+                  Un projet qui valorise le talent et la culture du Bénin. Site web moderne mettant en avant les richesses culturelles et les talents béninois.
+                </p>
+                <div class="tech-icons">
+                  <i class="fab fa-laravel"></i>
+                  <i class="fab fa-php"></i>
+                  <i class="fas fa-database"></i>
+                  <i class="fab fa-bootstrap"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projet 3 -->
+          <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
+            <div class="card h-100 shadow-sm">
+              <img src="assets/img/academic3.jpg.png" class="card-img-top" alt="Portfolio M. Firmin TOVODOUNNON">
+              <div class="card-body">
+                <h5 class="card-title">Portfolio M. Firmin TOVODOUNNON</h5>
+                <p class="card-text">
+                  Portfolio professionnel avec système de vente de livres et prise de rendez-vous intégrée pour Mr Firmin TOVODOUNNON.
+                </p>
+                <div class="tech-icons">
+                  <i class="fab fa-laravel"></i>
+                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-chart-line"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= PROJETS PERSONNELS ================= -->
+      <div class="project-category personal">
+        <h3 class="mb-4" data-aos="fade-right">Projets Personnels</h3>
+
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="flip-left">
+            <div class="card h-100 shadow-sm">
+              <img src="assets/img/Vitrine du site Restaurant.png" class="card-img-top" alt="Site vitrine restaurant">
+              <div class="card-body">
+                <h5 class="card-title">Vitrine du site Restaurant</h5>
+                <p class="card-text">
+                  Un site vitrine élégant mettant en avant le menu, les services et l'ambiance unique du restaurant.
+                </p>
+                <div class="tech-icons">
+                  <i class="fab fa-html5"></i>
+                  <i class="fab fa-css3-alt"></i>
+                  <i class="fab fa-js"></i>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
+            <div class="card h-100 shadow-sm">
+              <img src="assets/img/Agence Naguézé.png" class="card-img-top" alt="Agence Naguézé">
+              <div class="card-body">
+                <h5 class="card-title">Agence Naguézé</h5>
+                <p class="card-text">
+                  Site web vitrine moderne avec animations interactives, mettant en valeur la structure et les services de l'agence.
+                </p>
+                <div class="tech-icons">
+                  <i class="fab fa-html5"></i>
+                  <i class="fab fa-css3-alt"></i>
+                  <i class="fab fa-react"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-aos="flip-left" data-aos-delay="400">
+            <div class="card h-100 shadow-sm">
+              <img src="assets/img/Portfolio Personnel.png" class="card-img-top" alt="Portfolio personnel">
+              <div class="card-body">
+                <h5 class="card-title">Portfolio Personnel</h5>
+                <p class="card-text">
+                  Découvrez mes projets de développement web. Tout est conçu avec HTML, CSS, JavaScript et animations modernes pour une expérience interactive.
+                </p>
+                <div class="tech-icons">
+                  <i class="fab fa-html5"></i>
+                  <i class="fab fa-css3-alt"></i>
+                  <i class="fab fa-js"></i>
+                  <i class="fab fa-php"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-4" data-aos="flip-left">
+            <div class="card h-100 shadow-sm">
+              <img src="assets/img/Site Web Maître Avocat.png" class="card-img-top" alt="Site web maître avocat">
+              <div class="card-body">
+                <h5 class="card-title">Site Web Maître Avocat</h5>
+                <p class="card-text">
+                  Conception de site web professionnel pour un maître avocat avec présentation de ses services et pédagogie juridique.
+                </p>
+                <div class="tech-icons">
+                  <i class="fab fa-html5"></i>
+                  <i class="fab fa-css3-alt"></i>
+                  <i class="fab fa-js"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
+            <div class="card h-100 shadow-sm">
+              <img src="assets/img/Boutique Équipements Sportifs.png" class="card-img-top" alt="Boutique en ligne équipements sportifs">
+              <div class="card-body">
+                <h5 class="card-title">Boutique Équipements Sportifs</h5>
+                <p class="card-text">
+                  Une boutique en ligne pour la vente d'équipements sportifs avec gestion d'inventaire, panier d'achat et paiement sécurisé.
+                </p>
+                <div class="tech-icons">
+                  <i class="fab fa-html5"></i>
+                  <i class="fab fa-css3-alt"></i>
+                  <i class="fab fa-js"></i>
+                  <i class="fab fa-php"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-aos="flip-left" data-aos-delay="400">
+            <div class="card h-100 shadow-sm">
+              <img src="assets/img/Gestionnaire Véhicules Location.png" class="card-img-top" alt="Gestionnaire de véhicules">
+              <div class="card-body">
+                <h5 class="card-title">Gestionnaire Véhicules Location</h5>
+                <p class="card-text">
+                  Un gestionnaire de véhicules pour sociétés de localisation contrôlant les entrées et sorties sur parking intégration automatique.
+                </p>
+                <div class="tech-icons">
+                  <i class="fab fa-html5"></i>
+                  <i class="fab fa-css3-alt"></i>
+                  <i class="fab fa-js"></i>
+                  <i class="fab fa-php"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-aos="flip-left">
+            <div class="card h-100 shadow-sm">
+              <img src="assets/img/Générateur de Citations Inspirantes.png" class="card-img-top" alt="Générateur de Citations Inspirantes">
+              <div class="card-body">
+                <h5 class="card-title">Générateur de Citations Inspirantes</h5>
+                <p class="card-text">
+                  Application web affichant des citations inspirantes avec fonctionnalités de partage et sauvegarde des favoris.
+                </p>
+                <div class="tech-icons">
+                  <i class="fab fa-html5"></i>
+                  <i class="fab fa-css3-alt"></i>
+                  <i class="fab fa-js"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
+            <div class="card h-100 shadow-sm">
+              <img src="assets/img/Gestion des Étudiants.png" class="card-img-top" alt="Application de gestion des étudiants">
+              <div class="card-body">
+                <h5 class="card-title">Gestion des Étudiants</h5>
+                <p class="card-text">
+                  Application web de gestion des étudiants et de leurs notes avec dashboard intégré et rapports automatisés.
+                </p>
+                <div class="tech-icons">
+                  <i class="fab fa-html5"></i>
+                  <i class="fab fa-css3-alt"></i>
+                  <i class="fab fa-js"></i>
+                  <i class="fab fa-php"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-aos="flip-left" data-aos-delay="400">
+            <div class="card h-100 shadow-sm">
+              <img src="assets/img/Vente de Véhicules.png" class="card-img-top" alt="Vente de véhicules">
+              <div class="card-body">
+                <h5 class="card-title">Vente de Véhicules</h5>
+                <p class="card-text">
+                  Site vitrine dédié à la présentation et à la vente de véhicules d'occasion, avec options d'achat, de réservation et de réparation de voitures en ligne.
+                </p>
+                <div class="tech-icons">
+                  <i class="fab fa-html5"></i>
+                  <i class="fab fa-css3-alt"></i>
+                  <i class="fab fa-js"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Perceval GODONOU</strong> <span>All Rights Reserved<br></span></p>
+        <div class="social-links d-flex justify-content-center">
+          <a href="https://www.facebook.com/PercevalGodonou"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/perceval_godonou"><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    .hero p {
+      border-right: 3px solid #ffffff7a;
+      white-space: pre-wrap;
+      overflow: hidden;
+      animation: typing 6s steps(200, end) 1 forwards, blink 0.75s step-end infinite;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 500;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    @keyframes blink {
+      from, to {
+        border-color: #ffffff7a;
+      }
+      50% {
+        border-color: transparent;
+      }
+    }
+  </style>
+
+  <!-- =======================================================
+  * Template Name: Kelly
+  * Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <div id="root"></div>
+
+  <!-- React (UMD) + Babel for inline JSX -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <script type="text/babel">
+    const { useState } = React;
+
+    function Header({ view, setView }) {
+      return (
+        <header id="header" className="header d-flex align-items-center light-background sticky-top">
+          <div className="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+            <a href="/" className="logo d-flex align-items-center me-auto me-xl-0" onClick={(e)=>{e.preventDefault(); setView('home');}}>
+              {/* image logo could go here */}
+            </a>
+
+            <nav id="navmenu" className="navmenu">
+              <ul>
+                <li><a href="/" className={view==='home'? 'active':''} onClick={(e)=>{e.preventDefault(); setView('home');}}>Home</a></li>
+                <li><a href="/" className={view==='about'? 'active':''} onClick={(e)=>{e.preventDefault(); setView('about');}}>About</a></li>
+                <li><a href="/" className={view==='portfolio'? 'active':''} onClick={(e)=>{e.preventDefault(); setView('portfolio');}}>Portfolio</a></li>
+                <li><a href="/" className={view==='contact'? 'active':''} onClick={(e)=>{e.preventDefault(); setView('contact');}}>Contact</a></li>
+              </ul>
+              <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+            <div className="header-social-links">
+              <a href="#" className="facebook"><i className="bi bi-facebook"></i></a>
+              <a href="#" className="instagram"><i className="bi bi-instagram"></i></a>
+              <a href="#" className="linkedin"><i className="bi bi-linkedin"></i></a>
+            </div>
+
+          </div>
+        </header>
+      );
+    }
+
+    function Home() {
+      return (
+        <main className="main">
+          <section id="hero" className="hero section">
+
+            <img src="assets/img/perceval.png" alt="Perceval" data-aos="fade-in" />
+
+            <div className="container text-center" data-aos="zoom-out" data-aos-delay="100">
+              <div className="row justify-content-center">
+                <div className="col-lg-8">
+                  <p style={{color: '#ffffff', fontSize: '1.15rem', letterSpacing: '0.5px', marginTop: 40}}>
+                    Je suis Perceval GODONOU, professionnel du digital et de la communication sportive : développeur web, community manager, consultant et reporter sportif. Promoteur de FOOT INFO+, je contribue à la visibilité du football féminin et masculin local et à la promotion des talents.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+          </section>
+        </main>
+      );
+    }
+
+    function About() {
+      return (
+        <main className="main">
+          <section id="about" className="about section">
+            <div className="container section-title" data-aos="fade-up">
+              <h2>About</h2>
+              <p>Je suis Perceval GODONOU — Développeur web | Communication sportive digitale | Promoteur de FOOT INFO+</p>
+            </div>
+
+            <div className="container" data-aos="fade-up" data-aos-delay="100">
+
+              <div className="row gy-4 justify-content-center">
+                <div className="col-lg-4">
+                  <img src="assets/img/profile-img.JPG" className="img-fluid" alt="Photo de Perceval GODONOU" />
+                </div>
+
+                <div className="col-lg-8 content">
+                  <h2>Développeur Web & Reporter Digital — Sport & Innovation</h2>
+                  <p className="fst-italic py-3">
+                    Passionné par le sport et l’innovation, j’allie développement web, communication et gestion de pages professionnelles pour concevoir des projets digitaux utiles et captivants.
+                  </p>
+                  <p className="py-3">
+                    <strong>GitHub :</strong> <a href="https://github.com/Perceval446" target="_blank" rel="noopener noreferrer">Perceval446</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </section>
+        </main>
+      );
+    }
+
+    function Portfolio() {
+      return (
+        <main className="main">
+          <section id="portfolio" className="section">
+            <div className="container section-title" data-aos="fade-up">
+              <h2>Portfolio</h2>
+              <p>Projets récents et réalisations.</p>
+            </div>
+            <div className="container" data-aos="fade-up" data-aos-delay="100">
+              <p>Contenu de portfolio ici.</p>
+            </div>
+          </section>
+        </main>
+      );
+    }
+
+    function Contact() {
+      return (
+        <main className="main">
+          <section id="contact" className="section">
+            <div className="container section-title" data-aos="fade-up">
+              <h2>Contact</h2>
+              <p>Entrez en contact via email ou réseaux.</p>
+            </div>
+            <div className="container" data-aos="fade-up" data-aos-delay="100">
+              <p>Email: percevalgodonou26@gmail.com</p>
+            </div>
+          </section>
+        </main>
+      );
+    }
+
+    function Footer() {
+      return (
+        <footer id="footer" className="footer light-background">
+          <div className="container">
+            <div className="copyright text-center ">
+              <p>© <span>Copyright</span> <strong className="px-1 sitename">Perceval GODONOU</strong> <span>All Rights Reserved<br/></span></p>
+              <div className="social-links d-flex justify-content-center">
+                <a href="https://www.facebook.com/PercevalGodonou"><i className="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/perceval_godonou"><i className="bi bi-instagram"></i></a>
+                <a href=""><i className="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      );
+    }
+
+    function App() {
+      const [view, setView] = useState('home');
+
+      return (
+        <div>
+          <Header view={view} setView={setView} />
+
+          {view === 'home' && <Home />}
+          {view === 'about' && <About />}
+          {view === 'portfolio' && <Portfolio />}
+          {view === 'contact' && <Contact />}
+
+          <Footer />
+
+          <a href="#" id="scroll-top" className="scroll-top d-flex align-items-center justify-content-center"><i className="bi bi-arrow-up-short"></i></a>
+          <div id="preloader"></div>
+        </div>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+  </script>
+
+  <!-- Vendor JS Files (kept for styles/behavior) -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File (kept) -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
